@@ -197,5 +197,19 @@
 
     <!-- AI Chatbot Script -->
     <script src="js/mwai-chatbot-main.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof mwaiChatbot === 'function') {
+                mwaiChatbot.init({
+                    id: 'chatbot-u54g5a',
+                    container: 'mwai-chatbot-widget-container',
+                    // Add any other necessary configuration variables here
+                });
+            } else {
+                console.error('mwaiChatbot function not found. Did you load the script correctly?');
+            }
+        });
+    </script>
 </body>
 </html>
