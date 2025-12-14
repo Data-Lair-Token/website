@@ -45,6 +45,30 @@
         </div>
     </section>
 
+    <!-- AI Assistant Section -->
+<section class="section section-dark">
+  <div class="container">
+    <h2 class="section-title">AI Assistant</h2>
+
+    <div id="chatbot-u54g5a" style="min-height:520px;"></div>
+  </div>
+</section>
+
+<!-- AI Engine Cross-Site Embed -->
+<script src="https://nextrealm.ai/wp-content/plugins/ai-engine-pro/app/embed.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    if (window.MwaiChatbot) {
+      MwaiChatbot.init({
+        botId: 'chatbot-u54g5a',
+        container: '#chatbot-u54g5a'
+      });
+    } else {
+      console.error('AI Engine embed.js did not load (MwaiChatbot undefined)');
+    }
+  });
+</script>
+
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
