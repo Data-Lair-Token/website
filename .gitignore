@@ -1,0 +1,30 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+.cache/
+
+# Build artifacts
+dist/
+build/
+*.min.css.map
+*.min.js.map
+
+# Dependencies (if using npm)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
