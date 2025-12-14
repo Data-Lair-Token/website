@@ -522,8 +522,8 @@ html {
     color: var(--primary-bg);
 }
 
-/* Loading Animation for Chatbot */
-#mwai-chatbot-widget-container p {
+/* Loading Animation for Chatbot Placeholder */
+#mwai-chatbot-widget-container > p {
     color: var(--text-secondary);
     font-size: 0.9rem;
     animation: pulse 2s infinite;

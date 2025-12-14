@@ -196,11 +196,13 @@
     </footer>
 
     <!-- AI Chatbot Script -->
+    <!-- NOTE: Replace the placeholder script below with the actual AI Engine plugin script path -->
+    <!-- Example: <script src="https://your-wordpress-site.com/wp-content/plugins/ai-engine/js/mwai-chatbot-main.min.js"></script> -->
     <script src="js/mwai-chatbot-main.min.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            if (typeof mwaiChatbot === 'function') {
+            if (typeof mwaiChatbot !== 'undefined' && typeof mwaiChatbot.init === 'function') {
                 mwaiChatbot.init({
                     id: 'chatbot-u54g5a',
                     container: 'mwai-chatbot-widget-container',
