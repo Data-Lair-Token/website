@@ -195,21 +195,29 @@
         </div>
     </footer>
 
-    <!-- AI Chatbot Script -->
-    <script src="https://nextrealm.ai/wp-content/plugins/ai-engine/js/mwai-chatbot-main.min.js"></script>
+<!-- AI Assistant Section -->
+<section class="section section-dark">
+  <div class="container">
+    <h2 class="section-title">AI Assistant</h2>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof mwaiChatbot !== 'undefined' && typeof mwaiChatbot.init === 'function') {
-                mwaiChatbot.init({
-                    id: 'chatbot-u54g5a',
-                    container: 'mwai-chatbot-widget-container',
-                    // Add any other necessary configuration variables here
-                });
-            } else {
-                console.error('mwaiChatbot function not found. Did you load the script correctly?');
-            }
-        });
-    </script>
+    <div id="chatbot-u54g5a" style="min-height:520px;"></div>
+  </div>
+</section>
+
+<!-- AI Engine Cross-Site Embed -->
+<script src="https://nextrealm.ai/wp-content/plugins/ai-engine-pro/app/embed.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    if (window.MwaiChatbot) {
+      MwaiChatbot.init({
+        botId: 'chatbot-u54g5a',
+        container: '#chatbot-u54g5a'
+      });
+    } else {
+      console.error('AI Engine embed.js did not load (MwaiChatbot undefined)');
+    }
+  });
+</script>
 </body>
+
 </html>
