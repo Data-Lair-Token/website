@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data Lair - A Solana community focused on AI, data center tools, and AI Agents">
+    <title>Data Lair | AI Agent Page</title> 
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-gradient"></div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">DATA <span class="highlight">LAIR</span></span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a> 
+                <a href="agent.html" class="nav-link">AI Agent</a> 
+                <a href="#about" class="nav-link">About</a> 
+                <a href="#community" class="nav-link">Community</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="agent-page-main">
+        <section class="section section-dark" id="ai-agent-standalone">
+            <div class="container">
+                <h2 class="section-title">Data Lair AI Agent Console</h2>
+                
+                <div id="chatbot-u54g5a" style="min-height:600px; padding: 20px;">
+                    <p>Loading AI Agent...</p>
+                </div>
+                
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Data Lair</h4>
+                    <p>Building the future of AI on Solana</p>
+                </div>
+                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Data Lair. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://nextrealm.ai/wp-content/plugins/ai-engine-pro/app/embed.js"></script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            if (window.MwaiChatbot) {
+                MwaiChatbot.init({
+                    botId: 'chatbot-u54g5a',
+                    container: '#chatbot-u54g5a'
+                });
+            } else {
+                console.error('AI Engine embed.js did not load (MwaiChatbot undefined)');
+            }
+        });
+    </script>
+    </body>
+</html>
